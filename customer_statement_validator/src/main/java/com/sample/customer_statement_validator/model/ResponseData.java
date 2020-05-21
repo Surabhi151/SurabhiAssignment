@@ -4,7 +4,7 @@ public class ResponseData
 {
     private String result;
 
-    private ErrorRecords[] errorRecords;
+    private ErrorRecords errorRecords;
 
     public String getResult ()
     {
@@ -16,12 +16,12 @@ public class ResponseData
         this.result = result;
     }
 
-    public ErrorRecords[] getErrorRecords ()
+    public ErrorRecords getErrorRecords ()
     {
         return errorRecords;
     }
 
-    public void setErrorRecords (ErrorRecords[] errorRecords)
+    public void setErrorRecords (ErrorRecords errorRecords)
     {
         this.errorRecords = errorRecords;
     }

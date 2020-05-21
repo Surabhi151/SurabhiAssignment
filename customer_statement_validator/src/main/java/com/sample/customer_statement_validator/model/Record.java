@@ -9,7 +9,7 @@ public class Record {
 
     private BigDecimal endBalance;
 
-    private String reference;
+    private int reference;
 
     private BigDecimal mutation;
 
@@ -39,11 +39,11 @@ public class Record {
         this.endBalance = endBalance;
     }
 
-    public String getReference() {
+    public int getReference() {
         return reference;
     }
 
-    public void setReference(String reference) {
+    public void setReference(int reference) {
         this.reference = reference;
     }
 

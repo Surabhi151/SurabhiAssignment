@@ -1,34 +1,23 @@
 package com.sample.customer_statement_validator.model;
 
-public class ErrorRecords
-{
-    private String reference;
+import java.util.ArrayList;
+import java.util.List;
 
-    private String accountNumber;
+public class ErrorRecords {
+    List<ErrorRecord> errorRecords = new ArrayList<>();
 
-    public String getReference ()
-    {
-        return reference;
+    public List<ErrorRecord> getErrorRecords() {
+        return errorRecords;
     }
 
-    public void setReference (String reference)
-    {
-        this.reference = reference;
-    }
-
-    public String getAccountNumber ()
-    {
-        return accountNumber;
-    }
-
-    public void setAccountNumber (String accountNumber)
-    {
-        this.accountNumber = accountNumber;
+    public void setErrorRecords(List<ErrorRecord> errorRecords) {
+        this.errorRecords = errorRecords;
     }
 
     @Override
-    public String toString()
-    {
-        return "ErrorRecords [reference = "+reference+", accountNumber = "+accountNumber+"]";
+    public String toString() {
+        return "ErrorRecords{" +
+                "errorRecords=" + errorRecords +
+                '}';
     }
 }
